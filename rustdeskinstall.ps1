@@ -64,6 +64,7 @@ add-content -path "C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustD
 "direct-server = 'Y'"
 )
 get-service rustdesk|restart-service
+start-sleep -seconds 3
 cd $env:ProgramFiles\RustDesk\
 .\rustdesk.exe --password $rustdesk_pw
 }
