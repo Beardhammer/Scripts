@@ -5,7 +5,7 @@ set -euo pipefail
 # Zellij loader installer
 #
 # Usage:
-#   bash <(curl -sL https://raw.githubusercontent.com/YOURUSER/YOURREPO/main/install.sh)
+#   bash <(curl -sL https://raw.githubusercontent.com/Beardhammer/Scripts/refs/heads/master/installzellij.sh)
 #
 # What it does:
 #   1. Installs the load-zellij script to ~/.local/bin/
