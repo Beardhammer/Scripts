@@ -5,7 +5,7 @@ set -euo pipefail
 # Zellij loader installer
 #
 # Usage:
-#   bash <(curl -sL https://raw.githubusercontent.com/Beardhammer/Scripts/refs/heads/master/installzellij.sh)
+#   bash <(curl -sL https://raw.githubusercontent.com/YOURUSER/YOURREPO/main/install.sh)
 #
 # What it does:
 #   1. Installs the load-zellij script to ~/.local/bin/
@@ -51,7 +51,7 @@ if is_sourced; then
             if [[ -x $HOME/.cache/chezmoi/tmp/zellij/zellij ]]; then
                 ln --symbolic --relative $HOME/.cache/chezmoi/tmp/zellij/zellij ~/bin
             elif [[ ! -x /tmp/zellij/bootstrap/zellij ]]; then
-                 printf "Grabbing zellij from the web!\n"
+                echo "Grabbing zellij from the web!"
                 bash <(curl -sL zellij.dev/launch) "${@}" && return
             fi
         fi
